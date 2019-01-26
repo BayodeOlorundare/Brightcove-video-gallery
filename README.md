@@ -11,7 +11,7 @@
 
 ---------------------------------------
 ```
-Access live app below.
+Access project below.
 ```
 [View Project](http://www.canadianhealthcarenetwork.ca/videos)
 
