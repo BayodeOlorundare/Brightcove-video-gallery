@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+/*==============================================
+Default
+==============================================*/
+#content {background: #fff !important;}
+p:empty {display: none;}
+body, .vjs-playlist {color: #000 !important;font-family: Arial,Helvetica,sans-serif !important;}
+li {float: left;margin: 0 20px;}
+.chn-vidhub-hide {display: none;}
+.post ol li {text-indent: 0px;}
+.entry ol {padding: 0;margin: 0;}
+input[type=button]:focus , button:focus {background: #00AFDB !important;background-color: #00AFDB !important;border: 1px solid #00AFDB}
+/*==============================================
+Preloader
+==============================================*/
+.no-js #loader {display: none;}
+.js #loader {display: block; position: absolute; left: 100px; top: 0;} 
+.se-pre-con {position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url(http://files.canadianhealthcarenetwork.ca/scripts/projects/videohub/CSS/Preloader_21.gif) center no-repeat #fff;}
+/*==============================================
+Container
+==============================================*/
+.chn-vidhub-top {max-width:960px;margin: 0 auto;}
+.chn-vid-player {max-width:960px;height: 330px;padding: 0 !important;display: inline-flex;position: relative;float: left;}
+div#chn-videohub-player {position: relative !important;}
+.chn-videohub-ad-container {display: block; position: relative; max-width: 300px;}
+#chn-vidhub-meta-title {float:left;width:615px;}
+.chn-vidhub-playlist-wrapper {width: 98%;margin: 0 auto;}
+.chn-vidhub-load-container {width: 100%;max-width: 960px;}
+#ad-title {font-size: 16px;text-align: center;}
+/*==============================================
+Player/Ad
+==============================================*/
+.chn-next-previous {max-width: 600px;height: auto;}
+.chn-button-show {display: blcok;}
+.chn-button-hide {display: none;}
+button#chn-next-button, button#chn-previous-button {background-color: #fff;border: none;font-weight: bold;padding: 14px;text-transform: uppercase;}
+button#chn-next-button {text-align: right;font-size: 12px;vertical-align: top;height: 80px;}
+button#chn-previous-button {text-align: left;font-size: 12px;vertical-align: top;height: 80px;}
+.chn-blue-hoverstate, .chn-previous-video:hover, .chn-next-video:hover, #chn-next-button:hover, #chn-previous-button:hover {cursor:pointer}
+.chn-previous-video:focus, .chn-next-video:focus, .chn-blue-hoverstate {background-color: #00AFDB !important;border-radius:15px}
+.chn-previous-video {float: left;max-width: 250px;width: 250px;text-align: left;word-break: break-word !important;height: auto;white-space: pre-wrap;/* CSS3 */white-space: -moz-pre-wrap; /* Firefox */white-space: -pre-wrap;/* Opera 7 */white-space: -o-pre-wrap;/* Opera 7 */word-wrap: break-word; /* IE */word-break: unset;margin-bottom: 10px;}
+.chn-next-video {float: right;text-align: right;max-width: 250px;width: 250px;word-break: break-word;height: auto;white-space: pre-wrap;/* CSS3 */white-space: -moz-pre-wrap; /* Firefox */white-space: -pre-wrap;/* Opera 7 */white-space: -o-pre-wrap;/* Opera 7 */word-wrap: break-word; /* IE */word-break: unset;margin-bottom: 10px;}
+span#chn-next-title, span#chn-previous-title {font-size: 13px !important;font-weight: normal;text-transform: none;}
+.myplayer {max-width: 600px !important;width: 600px !important;display: inline-table;padding-right: 8px;border-right: 1px solid #000;float:left;position: relative;}
+.bc-player-rk4JEU3N_default {overflow: hidden !important;}
+.video-js {height: 337.5px !important;}
+#chn-videohub-player > div.vjs-control-bar {bottom: 0;left: 0;right: 0;height: 42px !important;}
+#featured-ad {width:300px !important;float:left;padding-left: 10px;}
+div#ad-image {border: 1px solid #000;width: 300px;padding: 2px;}
+/*==============================================
+Metadata
+==============================================*/
+div#chn-vidhub-videoInfo {max-width: 600px !important;width: 100% !important;border-bottom: 1px solid #000;float: left;}
+h1#chn-vidhub-meta-title {font-weight: 700;font-style: normal;font-size: 35px !important;line-height: 48px !important;color:#000;word-break: break-word !important;overflow: hidden !important;}
+div#chn-vidhub-meta {display:inline-flex;width:100%}
+.chn-vidhub-submeta {display: inline-flex;font-size: 16px;font-weight: bold;max-width: 900px;width:900px}
+.chn-vidhub-submeta2 {margin: 2% 0 2% 0;}
+.chn-vidhub-cat {font-size: 16px;margin: 0;}
+span#chn-vidhub-vidcat {margin: 0;font-size: 14px !important;color:#B5121B;;text-transform:uppercase;padding: 0 14px 0 14px;}
+div#chn-vidhub-meta-time {padding: 0 14px 0 14px;} 
+span#chn-vidhub-meta-date, div#chn-vidhub-meta-date {padding-left: 14px;}
+div#chn-vidhub-opthead {float:right;font-size:11px !important;color:#000;margin: 0 auto; width: 640px; margin-bottom: 3%;}
+.chn-vidhub-nobutton, #chn-vidhub-opthead > button > span:hover {color:#222}
+button.chn-vidhub-nobutton:focus {outline: none !important;}
+.chn-vidhub-nobutton {background-color: #fff;border: none;color:#767676;}
+#chn-vidhub-opthead > button {border: 0px solid #fff !important;background-color: #fff !important;background: white !important;cursor: pointer !important;color:#000}
+div#chn-vidhub-opthead:focus, #chn-vidhub-opthead > button > span:focus, div#chn-vidhub-opthead:hover, #chn-vidhub-opthead > button > span:hover {cursor: pointer;color: #000;text-decoration:underline;}
+div#chn-vidhub-timedate {font-size: 16px !important;line-height: 24px !important;text-align: left;font-weight: 400;font-style: normal;display: -webkit-inline-flex;display: flex; display: inline-flex;width:100% !important; display: -webkit-box; /* iOS 6-, Safari 3.1-6 */;display: -moz-box; /* Firefox 19 */; display: -ms-flexbox; /* IE 10 */; display: -webkit-flex; /* Chrome */; display: flex; /* Opera 12.1, Firefox 20+ */}
+div#chn-vidhub-meta-desc {font-size: 16px !important;line-height: 24px !important;text-align: left;font-style: normal;max-width:615px;}
+div#chn-vidhub-sharing a {font-size: 18px !important;line-height: 24px !important;text-align: left;font-style: normal;color: #003E7E;font-weight: 600;text-decoration: none;}
+/*==============================================
+Menu
+==============================================*/
+.chn-vidhub-button{color: #000 !important;}
+#chn-vidhub-menu li {margin: 0 10px;}
+#chn-vidhub-menu li:hover, #chn-vidhub-menu li:focus {background-color: #fff;color: #000;}
+.chn-vidhub-button:hover {background-color: #00AFDB !important;color: #000 !important;cursor: pointer}
+#chn-vidhub-menu {list-style: none;display: flex;width:80%;padding-left:0;margin: 0 auto}
+#chn-vidhub-menu > li:nth-child(1) {margin-left: 0;}
+.chn-vidhub-mobile-menu {display: none;height: 40px;margin-left: 9%;border: none;font-size: 18px;width: 187px;}
+select.chn-vidhub-mobile-menu {background-color: #fff;color: #000;}
+/*==============================================
+Gallery
+==============================================*/
+.vjs-playlist {font-size: 14px;min-width: 238px;background-color: #fff !important;color: #000 !important;padding: 14px 14px 0 14px;display: block;max-width: 858px;margin: 0 auto !important;}
+.vjs-playlist .vjs-playlist-item {min-height: 155px !important;max-height: 155px !important;margin: 0 3% 3% 0 !important;width: 310px !important;height:auto}
+.vjs-mouse.vjs-playlist .vjs-playlist-item:focus .vjs-playlist-poster::before, .vjs-mouse.vjs-playlist .vjs-playlist-item:hover .vjs-playlist-poster::before {margin-top: 55px !important;border-radius: 0px !important;}
+.vjs-playlist-item {padding: 3% 0 8% 0 !important;max-height: 300px !important;border-radius: 0px;/*box-shadow: 6px 9px 5px #c4c7c8;*/width: 100%;height: 100%;max-width: 260px;overflow: hidden;}
+.vjs-playlist-now-playing:before {top: 3px !important;transform: scale(1);}
+.vjs-playlist-now-playing {top: 3px !important;left: 0;position: static;}
+.vjs-playlist .vjs-playlist-poster:hover {transform: scale(1.1);}
+#vjs-playlist > li.vjs-playlist-item.vjs-selected:hover {transform: scale(1);}
+.vjs-playlist .vjs-playlist-poster {height: 146px !important;margin-right: 14px;width: 260px !important;transition: all .5s ease-in-out;background-color: #00AFDB;display: block;float: left;font-size: 21px !important;}
+.vjs-playlist-poster.vjs-playlist-now-playing {transition: none !important;}
+.vjs-playlist .vjs-playlist-poster:before {display: block !important;position: absolute !important;background-color: rgba(0, 175, 219,0.7);text-align: center;color: #fff;right: 0;height: 54px !important;line-height: 56px !important;width: 100% !important;bottom: 18px !important;left: 0 !important;right: 0!important; margin-top: 90px !important}
+#vjs-playlist > li.vjs-playlist-item.vjs-selected > picture {-webkit-transition: none !important; -moz-transition: none !important;-o-transition: none !important;transition: none !important;}
+#vjs-playlist > li.vjs-playlist-item.vjs-selected > picture:hover {transform: none !important;}
+.vjs-icon-play {background-color: rgba(0, 175, 219,0.8);text-align: center;color: #fff;line-height: 30px;width: 30px;border-radius: 20px;position: relative;}
+.vjs-icon-play:before {top: -25px;}
+.vjs-playlist-now-playing:before {margin-top: 94px !important;}
+.vjs-playlist-description {display: none;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 0;padding: 2px 8px;position: absolute;top: 12%;z-index: 99;left: -7px;padding: 2px 10px;font-size: 12px;z-index: 9;}
+.vjs-playlist cite, .vjs-playlist-name {height: 14px;line-height: 150%;z-index: 9;position: absolute;bottom: 10%;padding: 2%;overflow: visible;text-overflow: initial;white-space: normal;font-style:normal !important;font-size: 16px;bottom: 44px;padding: 12px 0 12px 0;word-break: break-word !important;overflow: visible;text-overflow: clip;max-width: 250px;white-space: pre-wrap; /* css-3 */;white-space: -moz-pre-wrap; /* Mozilla, since 1999 */;white-space: -pre-wrap; /* Opera 4-6 */;white-space: -o-pre-wrap; /* Opera 7 */;word-wrap: break-word;}
+.loadMore {display: block;text-align: center;cursor: pointer;width: 420px;letter-spacing: -1px;font-size: 1.7rem;line-height: 1.7rem;font-weight: 700;margin: 0 auto;padding: 10px 0;border: 1px solid #003E7E;background-color: #003E7E;color:#fff;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;text-transform: lowercase;text-shadow: none;font-weight: 700;font-style: normal;border-radius: 30px;transition: background-color 1s ease-in-out}
+#loadMore > button {border: none !important;background: #003E7E !important;background-color: #003E7E !important;transition: background-color 1s ease-in-out}
+#loadMore:hover, .loadMore:hover, #loadMore > button:hover {background-color: #00AFDB;border: 1px solid #00AFDB;background-color: #00AFDB;}
+#loadMore > button:nth-child(2) {visibility: hidden !important; display:none !important;}
+/* hide 7th and subsequent gallery items*/
+.vjs-playlist-item:nth-child(n+7) {display:none}
+/*==============================================
+Responsive
+==============================================*/
+@media all and (max-width: 769px){
+.myplayer {max-width:760px !important;width:100% !important;border: none !important;padding:0 !important}
+div#featured-ad, #content > div > h2 {display:none;}
+#chn-vidhub-videoInfo {max-width: 768px;width:98% !important;margin-left: 10px}
+.chn-vidhub-timedate {padding-bottom: 2%;}
+#chn-vidhub-menu {display: none;}
+.chn-next-previous {display: none;}
+div#chn-vidhub-opthead {width: 417.5px;}
+.chn-vidhub-categories .chn-vidhub-mobile-tabs ul.dropdown-menu {position: absolute;left: 15px;}
+.chn-vidhub-mobile-menu {display: block;}
+.chn-vidhub-playlist-wrapper {width: 893px;}
+.post ul, .post ol {margin-right: 15px; margin-left: 30px;}
+.vjs-playlist {padding: 0 2%;display: block;max-width: 760px;margin: 0 auto;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-item {min-height: 200px !important;max-height: 225px !important;margin: 0 3% 3% 0 !important;width: 310px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {max-width: 279px;left: 0%;font-size: 19px;height: 14px !important;line-height: 19px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 270px !important;top: 10% !important;left: 0 !important;font-size: 13px;width: 100%;max-width: 279px;left: 0%;font-size: 19px;}
+.chn-vidhub-categories ul {list-style-type: none;font-size: 14px;font-weight: 500;position: relative;}
+.chn-vidhub-load-container {width: 100%;max-width: 724px;}
+.loadMore {width: 500px;}	
+}
+/*Ipad*/
+@media all and (max-width: 768px){
+.post ol li {list-style-type: inherit !important;}
+.chn-vidhub-top {max-width: 768px;}
+.myplayer {max-width:760px !important;width:100% !important;border: none !important;padding:0 !important}
+div#chn-vidhub-videoInfo {max-width: 715px !important;}
+div#chn-vidhub-opthead {width: 417.5px;}
+.chn-vidhub-mobile-menu {display: block;margin-left: 41px;}
+.chn-vidhub-playlist-wrapper {width: 688px;}
+.post ul, .post ol {margin-right: 15px; margin-left: 30px;}
+.vjs-playlist .vjs-playlist-item {min-height: 195px !important;max-height: 215px !important;margin: 0 3% 3% 0 !important;width: 310px !important;max-width: 400px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;margin-bottom: 14px;}
+.chn-vidhub-timedate {padding-bottom: 2%;}
+.chn-vidhub-categories .chn-vidhub-mobile-tabs ul.dropdown-menu {position: absolute;left: 15px;}
+.vjs-playlist {padding: 0 2%;display: block;max-width: 760px;margin: 0 auto;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {max-width: 279px;left: 0%;font-size: 19px;height: 14px !important;line-height: 19px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 270px !important;top: 10% !important;left: 0 !important;font-size: 13px;width: 100%;max-width: 279px;left: 0%;font-size: 19px;}
+.chn-vidhub-categories ul {list-style-type: none;font-size: 14px;font-weight: 500;position: relative;}
+.chn-vidhub-load-container {width: 100%;max-width: 724px;}
+.loadMore {width: 500px;}	
+}
+@media all and (max-width: 415px){
+div#chn-vidhub-videoInfo {max-width: 365px !important;}
+.chn-vidhub-cat {font-size: 12px !important;padding: 0 5px 0 0px;}
+span#chn-vidhub-vidcat {padding: 0 5px 0 5px;font-size: 12px !important;}
+div#chn-vidhub-meta-time, .chn-vidhub-cat {font-size: 12px !important;padding: 0 5px 0 0px;}
+span#chn-vidhub-meta-date, div#chn-vidhub-meta-date {padding-left: 5px;font-size: 12px;}
+.chn-vidhub-meta-date {font-size: 12px;}
+div#chn-vidhub-meta-desc {font-size: 15px !important;line-height: 24px !important;max-width: 400px !important;}
+.chn-vidhub-submeta2 {max-width: 380px;padding-right: 6% !important;}
+div#chn-vidhub-opthead {width: 60% !important;}
+.chn-vidhub-playlist-wrapper {max-width: 323px !important;}
+.vjs-playlist .vjs-playlist-item {min-height: 245px !important;max-height: 255px !important;}
+.vjs-playlist .vjs-playlist-poster {margin-bottom: 5% !important;}
+.vjs-playlist cite {line-height: 115% !important;}
+.loadMore {width: 300px !important;}
+}
+/*Iphone 6 Plus*/
+@media all and (max-width: 414px){
+.chn-vidhub-top {max-width: 330px !important;}
+.chn-vid-player {max-width: 100% !important;}
+.myplayer {max-width: 400px !important;width: 100% !important;}
+div#chn-vidhub-videoInfo {max-width: 350px !important;width: 100% !important;margin: 0 auto;}
+#chn-vidhub-vidcat {font-size: 19px;}
+.chn-vidhub-meta-title {font-size: 34px;}
+div#chn-vidhub-opthead {width: 60%;}
+.chn-vidhub-timedate {padding-bottom: 3%;}
+div#chn-vidhub-meta-desc {max-width: 360px;}
+picture.vjs-playlist-poster {margin-bottom: 3%;}
+.chn-vidhub-playlist-wrapper {width: 100%;}
+.vjs-playlist .vjs-playlist-item {margin: 5% 3% 3% 0 !important;min-height: 250px !important;}
+.vjs-playlist cite {line-height: 25px !important;max-width: 310px !important;}
+.loadMore {width: 360px;}
+}
+/*Iphone 6*/
+@media all and (max-width: 375px){
+span#chn-vidhub-vidcat {padding: 0 2px 0 5px !important;}
+div#chn-vidhub-meta-time, .chn-vidhub-cat {padding: 0 2px 0 0px !important;}
+span#chn-vidhub-meta-date, div#chn-vidhub-meta-date {padding-left: 2px !important;}
+vidhub-top {max-width: 360px !important;}
+.chn-vid-player {max-width: 345px !important;}
+div#chn-vidhub-videoInfo {max-width: 331px !important;width: 331px !important;margin-left: 0 !important;}
+.chn-vidhub-meta-title {width: 100% !important;}
+.chn-vidhub-timedate {padding-bottom: 4% !important;}
+div#chn-vidhub-opthead {width: 63% !important;}
+.chn-vidhub-mobile-menu {display: block;margin-left: 13px !important;}
+.chn-vidhub-playlist-wrapper {width: 343px !important;}
+.post ul, .post ol {margin-left: 3% !important;}
+.vjs-playlist .vjs-playlist-item {margin: 5% 3% 3% 0 !important;width: 310px !important;height: 235px !important;max-width: 400px !important;min-height: 235px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.vjs-playlist cite {max-width: 310px !important;left: 1% !important;font-size: 16px !important;line-height: 24px !important;}
+.loadMore {width: 340px;}
+}
+/*Galaxy S5*/
+@media all and (max-width: 360px){ 
+div#chn-vidhub-opthead {width: 205px !important;}
+.chn-vidhub-mobile-menu {margin-left: 6% !important;}
+#chn-vidhub-videoInfo {margin: 0 !important;}
+.chn-vidhub-meta-title {font-size: 34px;width: 92% !important;}
+.chn-vidhub-timedate {padding-bottom: 4% !important;}
+.chn-vidhub-playlist-wrapper {width: 350px !important;}
+.post ul, .post ol {margin: 0 auto;max-width: 308px !important;padding: 0;}
+.vjs-playlist .vjs-playlist-item {margin: 5% 3% 3% 0 !important;width: 291px !important;height: 250px !important;max-width: 400px !important;}
+.vjs-playlist cite {line-height: 24px !important;max-width: 310px !important;left: 2% !important;}
+.loadMore {width: 300px !important;}
+}
+/*Iphone 5*/
+@media all and (max-width: 320px) { 
+div#chn-vidhub-videoInfo {max-width: 289px !important;width: 289px !important;}
+h1#chn-vidhub-meta-title {font-size: 30px !important;}
+.chn-vidhub-timedate {padding-bottom: 5%;}
+.chn-vidhub-mobile-menu {margin-left: 12px !important;}
+div#chn-vidhub-opthead {width: 185px !important;}
+span#chn-vidhub-vidcat, div#chn-vidhub-meta-time, .chn-vidhub-cat, .chn-vidhub-meta-date, span#chn-vidhub-meta-date, div#chn-vidhub-meta-date {font-size: 10px !important;}
+.chn-vidhub-playlist-wrapper {width: 300px !important;}
+.vjs-playlist .vjs-playlist-item {height: 255px !important;margin: 5% 3% 3% 0 !important;width: 263px !important;}
+.vjs-playlist {padding: 0;max-width: 400px;margin: 0 4% !important;}
+.vjs-playlist .vjs-playlist-poster {width: 264px !important;height: auto !important;}
+.vjs-playlist cite {max-width: 256px !important;font-size: 17px;left: 0% !important;}
+.chn-vidhub-load-container {width: 100%;max-width: 290px;}
+.loadMore {width:230px !important;}
+}
+/*==============================================
+Responsive - Landscape
+==============================================*/
+/*Ipad*/
+@media all and (max-width: 1024px) and (min-width: 774px) and (orientation: landscape) { 
+.chn-vidhub-playlist-wrapper {width: 960px;}
+.chn-videohub-player-container {max-width: 738px;}
+#chn-vidhub-menu {display: none;}
+.chn-vidhub-timedate {padding-bottom: 2%;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-item {min-height: 280px !important;
+    max-height: 300px !important;margin: 0 1% 3% 0 !important;width: 280px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {height: 14px !important;line-height: 25px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 283px !important;top: 10% !important;left: 0 !important;font-size: 20px;width: 100%;}
+}
+/*Iphone Plus */
+@media all and (max-width: 736px) and (min-width: 732px) and (orientation: landscape) {	
+.chn-vidhub-mobile-menu {display: block;margin-left: 3%;}
+.chn-videohub-player-container {max-width: initial;width: 100%;margin: 0 auto;}	
+#chn-vidhub-vidcat {font-size: 19px;}
+.chn-vidhub-meta-title {font-size: 34px;}
+#chn-vidhub-videoInfo {max-width: 700px;width: 100%}
+.chn-vidhub-timedate {padding-bottom: 3%;}
+.chn-vidhub-playlist-wrapper {width: 100%;max-width: 695px;}
+.chn-vidhub-mobile-tabs {display: block !important}
+#chn-vidhub-menu {display: none !important;}
+.loadMore {width: 640px;}
+.vjs-playlist {padding: 3%;display: block;max-width: 660px;margin: 0 auto !important;width: 100%;}
+.vjs-playlist .vjs-playlist-item {width: 100% !important;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-item {height: 210px !important;margin: 5% 3% 3% 0 !important;width: 310px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {height: 14px !important;line-height: 20px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 300px !important;top: 10% !important;left: 0% !important;font-size: 17px;}
+}
+/*Nexus 6P*/
+@media all and (max-width: 773px) and (min-width: 737px) and (orientation: landscape) { 
+.chn-vidhub-mobile-menu {display: block;margin-left: 5%;}
+.chn-videohub-player-container {max-width: initial;width: 100%;margin: 0 auto;}	
+#chn-vidhub-vidcat {font-size: 19px;}
+.chn-vidhub-meta-title {font-size: 34px;}
+#chn-vidhub-videoInfo {max-width: 412px;width: 85% !important}
+.chn-vidhub-timedate {padding-bottom: 3%;}
+.chn-vidhub-playlist-wrapper {width: 100%;padding-top: 0}
+.chn-vidhub-mobile-tabs {display: block !important}
+#chn-vidhub-menu {display: none !important;}
+div#chn-vidhub-opthead {width: 224PX !important;}
+.loadMore {width: 637px;margin: 0 auto;}
+.vjs-playlist {padding: 1%;display: block;max-width: 660px;margin: 0 auto !important;width: 100%;}
+.vjs-playlist .vjs-playlist-item {width: 100% !important;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-item {height: 210px !important;margin: 5% 3% 3% 0 !important;width: 310px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {height: 14px !important;line-height: 21px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 300px !important;top: 10% !important;left: 0% !important;font-size: 19px;}
+}
+/*Nexus 5X*/
+@media all and (max-width: 731px) and (min-width: 668px) and (orientation: landscape) {	
+.chn-vidhub-mobile-menu {display: block;margin-left: 3%;}
+.chn-videohub-player-container {max-width: initial;width: 100%;margin: 0 auto;}	
+#chn-vidhub-vidcat {font-size: 19px;}
+.chn-vidhub-meta-title {font-size: 34px;}
+#chn-vidhub-videoInfo {max-width: 700px;width: 100%}
+.chn-vidhub-timedate {padding-bottom: 3%;}
+.chn-vidhub-playlist-wrapper {width: 100%;margin: 0 auto;max-width: 650px;}
+.chn-vidhub-mobile-tabs {display: block !important}
+#chn-vidhub-menu {display: none !important;}
+.loadMore {width: 635px;}
+.vjs-playlist {padding: 0;display: block;max-width: 646px;margin: 0 auto !important;width: 100%;}
+.vjs-playlist .vjs-playlist-item {width: 100% !important;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-item {height: 210px !important;margin: 5% 2% 3% 0 !important;width: 310px !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {height: 14px !important;line-height: 20px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 300px !important;top: 10% !important;left: 0% !important;font-size: 20px;}
+}
+/*Iphone 6*/
+@media all and (max-width: 667px) and (min-width: 641px) and (orientation: landscape) { 
+.chn-vidhub-mobile-menu {display: block;}
+.chn-vidhub-playlist-wrapper {max-width: 653px;}
+.chn-vidhub-load-container {width: 100%;max-width: 641px;}
+.loadMore {width: 600px;}
+.post ul, .post ol {margin-left: 3%;}
+#chn-vidhub-videoInfo {max-width: 637px;}
+#chn-vidhub-menu {display: none;}
+.chn-vidhub-meta-title {font-size: 34px;width: 92% !important;}
+.chn-vidhub-timedate {padding-bottom: 4%;}
+.vjs-playlist {padding: 0%;display: block;max-width: 621px;margin: 0 auto !important;width: 100%;}
+.vjs-playlist .vjs-playlist-item {margin: 5% 3% 3% 0 !important;width: 291px !important;height: 195px !important;max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist .vjs-playlist-duration {background-color: rgba(255,255, 255,0.8);left: 4px !important;position: absolute !important;top: 12% !important;z-index: 9999 !important;padding: 2px 5px 0 5px !important;}
+.vjs-playlist cite {height: 14px !important;line-height: 18px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 276px !important;top: 10% !important;left: 0% !important;font-size: 17px;}
+}
+/*Galaxy S5*/
+@media all and (max-width: 640px) and (min-width: 569px) and (orientation: landscape) { 
+.chn-vidhub-mobile-menu {display: block;margin-left: 1%;}
+.chn-vidhub-playlist-wrapper {width: 614px;}
+.chn-vidhub-load-container {width: 100%;max-width: 610px;}
+.loadMore {width: 596px;}
+.post ul, .post ol {margin: 0 auto;}
+#chn-vidhub-videoInfo {max-width: 610px;}
+#chn-vidhub-menu {display: none;}
+.chn-vidhub-meta-title {font-size: 34px;width: 92% !important;}
+.chn-vidhub-timedate {padding-bottom: 4%;}
+.vjs-playlist {padding: 0;display: block;max-width: 607px;}
+.vjs-playlist .vjs-playlist-item {margin: 5% 2% 3% 0 !important;width: 291px !important;height: 195px !important;max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;}
+.vjs-playlist cite {height: 14px !important;line-height: 22px !important;z-index: 9 !important;position: relative !important;bottom: 0 !important;padding: 0 !important;margin: 0 auto;max-width: 276px !important;top: 6% !important;left: 0% !important;font-size: 21px;}
+}
+/*Iphone 5*/
+@media all and (max-width: 568px) and (orientation: landscape) { 
+.chn-vidhub-mobile-menu {display: block;}
+#chn-vidhub-videoInfo {max-width: 530px;}
+.chn-vidhub-meta-title {font-size: 30px;}
+.chn-vidhub-timedate {padding-bottom: 5%;}
+#chn-vidhub-menu {display: none;}
+.vjs-playlist cite {left: 3% !important;line-height: 23px !important;max-width: 240px !important;font-size: 19px;}
+.chn-vidhub-playlist-wrapper {margin: 0 auto;width: 300px;}
+.vjs-playlist .vjs-playlist-item {width: 100% !important;height: 240px !important;margin: 5% 3% 3% 0 !important;max-width: 257px !important;}
+.chn-vidhub-load-container {width: 100%;max-width: 610px;}
+.loadMore {width: 100%;margin: 0 auto;max-width: 290px;}
+.post ul, .post ol {margin-left: 0px;}
+.vjs-playlist-item {max-width: 400px !important;}
+.post ol li {list-style-type: inherit !important;}
+.vjs-playlist .vjs-playlist-poster {height: 162px !important;width: 310px !important;}
+.post.page-title-area img {width: 100% !important;height: 166px !important;margin-right: 10px;float: left;max-width: 257px;}
+}

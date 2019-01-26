@@ -1,0 +1,117 @@
+<link rel="stylesheet" type="text/css"  media="all" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css"  media="all" href="css/style.css">
+<div class="se-pre-con"></div>
+<div Class="chn-vidhub-top" id="chn-vidhub-top">
+	<div class="chn-next-previous">
+    	<div id="chn-prev-span"><button class="chn-previous-video" id="chn-previous-button" onclick="previousVideo();_gaq.push(['_trackEvent', 'CHN Video Page', 'Previous-button', 'Previous-button']);"><span class="chn-next-prev-span" >Previous Video in <span id="chn-previous-category"></span></span><div class="chn-previous-title"><span id="chn-previous-title"></span></div></button></div>
+        <div id="chn-next-span"><button class="chn-next-video" id="chn-next-button" onclick="nextVideo();_gaq.push(['_trackEvent', 'CHN Video Page', 'Next-button', 'Next-button']);"><span class="chn-next-prev-span" >Next Video in <span id="chn-next-category"></span></span><div class="chn-next-title"><span id="chn-next-title"></span></div></button></div>
+    </div>
+    <div class="chn-vid-player">    	
+        <div class="myplayer">
+            <video id="chn-videohub-player" data-account="1848920962" 
+                data-player="rk4JEU3N" 
+                data-embed="default" 
+                class="video-js" 
+                controls 
+                style="width: 100%; height: 100%; position: relative !important; top: 0px; bottom: 0px; right: 0px; left: 0px;">
+            </video>
+            <!--<script src="//players.brightcove.net/1848920962/rk4JEU3N_default/index.min.js"></script>-->
+        </div>
+        <div id="featured-ad">
+          <!--<div id="ad-title">
+            <h5>Advertisement</h5>
+          </div>
+          <div class="ad-image" id="ad-image"><a href="http://www.canadianhealthcarenetwork.ca/print-on-demand/" target="_blank" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Big-box', 'Big-box']);">
+          	<img src="http://rogers-healthcarenetwork.04.demo.equisoft.com/files/2016/10/chn-videohub-bigbox.jpg" alt="ad-sample" width="300" height="250" class="alignnone size-medium wp-image-5089" /></a>
+          </div>-->
+        </div>
+    </div>
+    <div class="chn-vidhub-hide">
+    <!---------------------------------------------
+                video player
+    ---------------------------------------------->
+    <!---------------------------------------------
+                    meta data
+    ---------------------------------------------->
+    </div>
+    <div id="chn-vidhub-videoInfo" style="width:100% !important;">
+        <div id="chn-vidhub-meta">  	
+        	<h1 class="chn-vidhub-meta-title" id="chn-vidhub-meta-title"></h1>            
+        </div>
+        <div class="chn-vidhub-submeta" style="width:800px !important;max-width: 900px !important;float: left;">
+        <ul style="list-style: none;padding-left: 0px !important;">
+        <li style="margin: 0px !important;"><div class="chn-vidhub-cat">Category<span id="chn-vidhub-vidcat"></span>|</div></li>
+        <li style="margin: 0px !important;"><div id="chn-vidhub-meta-time" class="chn-vidhub-meta-time"></div></li>
+        <li style="margin: 0px !important;"><div class="chn-vidhub-meta-date">|<span id="chn-vidhub-meta-date"></span></div></li>
+        </ul>
+        </div>
+        <div class="chn-vidhub-submeta2">
+        	<div id="chn-vidhub-meta-desc" class="chn-vidhub-meta-desc"></div>
+        	<div id="chn-vidhub-sharing" class="chn-vidhub-sharing"></div>
+		</div>
+    </div>
+    <div class="chn-vidhub-opthead" id="chn-vidhub-opthead">
+       <button onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Show-hide-button', 'Show-hid-button']);"><span class="chn-vidhub-show">SHOW LESS</span></button>
+    </div>
+    <div class="chn-vidhub-hide">
+    <!---------------------------------------------
+                end of meta data
+    ---------------------------------------------->
+    <!---------------------------------------------
+                    video menu
+    ---------------------------------------------->
+    </div>
+    <div class="chn-vidhub-menu">
+        <ul id="chn-vidhub-menu">
+            <li><input id="tab0" type="button" class="chn-vidhub-button" onclick="processTab(0);_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Latest', 'Tab: Latest']);" value="Latest"></li>
+            <li><input id="tab1" type="button" class="chn-vidhub-button" onclick="processTab(1);_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Share', 'Tab: Share']);" value="Share With Patients"></li>
+            <li><input id="tab2" type="button" class="chn-vidhub-button" onclick="processTab(2);_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Medical', 'Tab: Medical']);" value="Medical"></li>
+            <li><input id="tab3" type="button" class="chn-vidhub-button" onclick="processTab(3);_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Pharmacy', 'Tab: Pharmacy']);" value="Pharmacy"></li>
+            <li><input id="tab4" type="button" class="chn-vidhub-button" onclick="processTab(4);_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Other', 'Tab: Other']);" value="Other"></li>
+        </ul>
+    	<select class="chn-vidhub-mobile-menu" onchange="processTab(value);">
+          <option value="0" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Latest', 'Tab: Latest']);">Latest</option>
+          <option value="1" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Share', 'Tab: Share']);">Share With Patients</option>
+          <option value="2" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Medical', 'Tab: Medical']);">Medical</option>
+          <option value="3" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Pharmacy', 'Tab: Pharmacy']);">Pharmacy</option>
+          <option value="4" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Tab: Other', 'Tab: Other']);">Other</option>
+        </select>
+	</div>
+    <div class="chn-vidhub-hide">
+    <!---------------------------------------------
+                end of video menu
+    ---------------------------------------------->
+    <!---------------------------------------------
+                    playlists
+    ---------------------------------------------->	
+    </div>
+    <div class="chn-vidhub-playlist-wrapper">
+        <ol class="vjs-playlist" id="vjs-playlist"></ol>
+        <div class="chn-vidhub-load-container">
+          <div><button id="loadMore" class="loadMore" onclick="_gaq.push(['_trackEvent', 'CHN Video Page', 'Load more', 'Load more']);">Load more</button></div> 
+        </div>
+    </div>
+</div>
+<!---------------------------------------------
+      		end of playlist
+---------------------------------------------->	
+
+<!-- jQuery libraries -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<!-- Javascript code -->
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!---Debugger--->
+<script>
+//videojs("chn-videohub-player").ready(function(){
+	//myPlayer = this;
+    //View the current video object
+	//myPlayer.on('loadstart',function(){				
+		//console.log('Playlist array', myPlayer.playlist.currentItem());
+    //});		
+//});
+</script>
