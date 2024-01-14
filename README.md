@@ -13,6 +13,5 @@
 ```
 Access project below.
 ```
-[View Project](http://www.canadianhealthcarenetwork.ca/videos)
 
 > This project was developed for CHN (Canadian Healthcare Network) of EnsembleIQ; formally Rogers Communications
